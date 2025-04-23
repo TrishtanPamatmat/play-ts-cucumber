@@ -1,0 +1,290 @@
+[
+  {
+    "description": "As a user\nI want to be able to log in to my Swag Labs account\nSo that I can access my Swag Labs.",
+    "elements": [
+      {
+        "description": "",
+        "id": "swag-labs-login;successful-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 221909300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the Swag Labs homepage",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:32"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5017572700,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\trish\\Desktop\\play-ts-cucumber\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter my valid username \"standard_user\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter my valid password \"secret_sauce\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:48"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the \"Login\" button",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:56"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the \"Products\" heading",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:60"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49377999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "swag-labs-login;locked-out-user-login",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Locked Out User Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 162307400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the Swag Labs homepage",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 738130400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I enter the locked out username \"locked_out_user\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36604600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter my valid password \"secret_sauce\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12917499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click the \"Login\" button",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44083599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see the error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6962299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40317699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "swag-labs-login;username-and-password-does-not-match",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Username and Password does not match",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 145575100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the Swag Labs homepage",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 517013100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I enter an invalid username \"username\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27184400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I enter an invalid password \"password\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10150499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I click the \"Login\" button",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29213499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5035299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38010000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "swag-labs-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Swag Labs Login",
+    "tags": [],
+    "uri": ".github\\workflows\\src\\test\\features\\swaglabs_login.feature"
+  }
+]

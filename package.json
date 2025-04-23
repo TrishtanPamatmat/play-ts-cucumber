@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
-  },
+  "test": "cucumber-js .github/workflows/src/test/features/ --require .github/workflows/src/test/steps/swaglabs_login_steps.ts --require-module ts-node/register --format json:cucumber-report.json",
+  "report": "node report.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "@playwright/test": "^1.52.0",
     "@types/chai": "^5.2.1",
     "@types/node": "^22.14.1",
+    "cucumber-html-reporter": "^7.2.0",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
