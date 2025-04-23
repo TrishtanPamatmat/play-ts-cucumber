@@ -20,6 +20,11 @@ AfterAll(async () => {
     await browser.close();
 });
 
+// After each scenario, close the page
+After(async () => {
+    await page.close();
+});
+
 Given('I am on the Swag Labs homepage', async () => {
     await page.goto('https://www.saucedemo.com/');
 });
