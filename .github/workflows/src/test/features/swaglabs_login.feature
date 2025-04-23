@@ -18,3 +18,12 @@ Scenario: Locked Out User Login
     And I enter my valid password "secret_sauce"
     And I click the "Login" button
     Then I should see the error message "Epic sadface: Sorry, this user has been locked out."
+
+Scenario: Username and Password does not match
+    When I enter an invalid username "username"
+    And I enter an invalid password "password"
+    And I click the "Login" button
+    Then I should see the error message "Epic sadface: Username and password do not match any user in this service"
+    Examples:
+      | username             | password        |
+      | invalid_user_1       | wrong_password_1 |

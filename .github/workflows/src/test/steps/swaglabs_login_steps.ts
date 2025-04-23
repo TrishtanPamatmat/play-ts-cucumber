@@ -1,9 +1,12 @@
 import { Given, When, Then, Before, After, BeforeAll, AfterAll } from '@cucumber/cucumber';
 import { Browser, Page, chromium } from 'playwright';
 import { expect } from '@playwright/test';
+import { LoginPage } from '../page-objects/swaglabs_login_pom';
+
 
 let browser: Browser;
 let page: Page;
+let loginpage: LoginPage;
 
 // Before all scenarios, launch the browser
 BeforeAll(async () => {
@@ -13,6 +16,7 @@ BeforeAll(async () => {
 // Before each scenario, create a new page
 Before(async () => {
     page = await browser.newPage();
+    loginpage = new LoginPage(page);
 });
 
 // After all scenarios, close the browser
@@ -26,31 +30,38 @@ After(async () => {
 });
 
 Given('I am on the Swag Labs homepage', async () => {
-    await page.goto('https://www.saucedemo.com/');
+    await loginpage.goto();
 });
 
 When('I enter my valid username {string}', async (username) => {
-    await page.fill('#user-name', username);
+    await loginpage.enterUsername(username);
+});
+
+When('I enter an invalid username {string}', async (username) => {
+    await loginpage.enterUsername(username);
 });
 
 When('I enter the locked out username {string}', async (username) => {
-    await page.fill('#user-name', username);
+    await loginpage.enterUsername(username);
 });
 
 When('I enter my valid password {string}', async (password) => {
-    await page.fill('#password', password);
+    await loginpage.enterPassword(password);
+});
+
+When('I enter an invalid password {string}', async (password) => {
+    await loginpage.enterPassword(password);
 });
 
 When('I click the "Login" button', async () => {
-    await page.click('#login-button');
+    await loginpage.clickLoginButton();
 });
 
 Then('I should see the {string} heading', async (headingText) => {
-    await expect(page.locator('#header_container > div.header_secondary_container > span', { hasText: headingText })).toBeVisible();
+    await expect(loginpage.productsHeading).toHaveText(headingText);
 });
 
 Then('I should see the error message {string}', async (errorMessage) => {
-    await expect(page.locator('#login_button_container > div > form > div.error-message-container.error > h3')).toHaveText(errorMessage);
+    const actualErrorMessage = await loginpage.getErrorMessageText();
+    expect(actualErrorMessage).toBe(errorMessage);
 });
-
-

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES2019",
+      "module": "CommonJS",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "outDir": "dist" // Optional: Specify an output directory for compiled JS
+    },
+   "include": [
+  "./.github/workflows/src/test/**/*.ts"
+],
+    "exclude": [
+      "node_modules/**/*" // Be more specific with excluding node_modules
+    ]
+  }
