@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 221909300
+              "duration": 218371799
             }
           },
           {
@@ -26,9 +26,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:32"
             },
             "result": {
-              "status": "failed",
-              "duration": 5017572700,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\trish\\Desktop\\play-ts-cucumber\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 529741900
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:36"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38707899
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:48"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 15847899
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:56"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 60709400
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:60"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 13344000
             }
           },
           {
@@ -88,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49377999
+              "duration": 46822799
             }
           }
         ],
@@ -107,7 +106,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 162307400
+              "duration": 168983099
             }
           },
           {
@@ -119,8 +118,9 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:32"
             },
             "result": {
-              "status": "passed",
-              "duration": 738130400
+              "status": "failed",
+              "duration": 5016873299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\trish\\Desktop\\play-ts-cucumber\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
           {
@@ -132,8 +132,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:44"
             },
             "result": {
-              "status": "passed",
-              "duration": 36604600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -145,8 +145,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:48"
             },
             "result": {
-              "status": "passed",
-              "duration": 12917499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -158,8 +158,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:56"
             },
             "result": {
-              "status": "passed",
-              "duration": 44083599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -171,8 +171,8 @@
               "location": ".github\\workflows\\src\\test\\steps\\swaglabs_login_steps.ts:64"
             },
             "result": {
-              "status": "passed",
-              "duration": 6962299
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -180,7 +180,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40317699
+              "duration": 42780099
             }
           }
         ],
@@ -199,7 +199,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 145575100
+              "duration": 152220699
             }
           },
           {
@@ -212,7 +212,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 517013100
+              "duration": 522491000
             }
           },
           {
@@ -225,7 +225,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27184400
+              "duration": 26386899
             }
           },
           {
@@ -238,7 +238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10150499
+              "duration": 14148499
             }
           },
           {
@@ -251,7 +251,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29213499
+              "duration": 30901900
             }
           },
           {
@@ -264,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5035299
+              "duration": 6200500
             }
           },
           {
@@ -272,7 +272,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38010000
+              "duration": 38969900
             }
           }
         ],
