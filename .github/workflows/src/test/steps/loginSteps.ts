@@ -33,3 +33,10 @@ Given('User navigates to the application', async function () {
    await browser.close();
 
  });
+
+When('Login should fail', () => {
+  // Write code here that turns the phrase above into concrete actions
+})
+When('Login should fail', () => {
+  // Write code here that turns the phrase above into concrete actions
+})
