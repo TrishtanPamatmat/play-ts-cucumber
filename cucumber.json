@@ -1,0 +1,12 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths":[".github/workflows/src/test/features/"],
+        "dryRun": false,
+        "require": [".github/workflows/src/test/steps/*.ts"],
+        "requireModule": ["ts-node/register"]
+    }
+    
+}
